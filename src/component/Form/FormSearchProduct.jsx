@@ -34,15 +34,15 @@ const FormSearchProduct = ({ setOpenDropDown,handleGetValueChildren }) => {
   };
   return (
     <>
-        <form onSubmit={handleSubmit}>
-          <div className="flex items-center justify-between w-[500px] border rounded-md border-black pl-4">
+        <form onSubmit={handleSubmit} className="hidden lg:inline-flex mt-5">
+          <div className="flex py-2 pl-5 w-[600px] bg-white rounded-lg">
             <input
               onChange={handleChange}
               className="flex-1 focus:border-none focus:outline-none"
               type="text"
               placeholder="Nhập tên công việc cần tìm kiếm"
             />
-            <button className="p-2 text-sm" type="submit">
+            <button className="py-3 px-4 mr-2 bg-[#003912] text-lg rounded-md text-white" type="submit">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </div>
